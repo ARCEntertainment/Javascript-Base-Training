@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon premier site web - Javascript</title>
+    <meta
+      name="description"
+      content="Mes tous premiers scripts en javascript"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/css/stylejs.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <!-- Image ajoutée via le CSS -->
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="actif">
+            <a href="javascript.html">Javascript</a>
+          </li>
+          <li>
+            <a href="tableaux.html">Les tableaux</a>
+          </li>
+          <li>
+            <a href="formulaire.html">Les formulaires</a>
+          </li>
+          <li>
+            <a href="https://www.interface3namur.be" target="_blank"
+              >Interface3.Namur</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Javascript</h1>
+      <section>
+        <h2>Mes premiers scripts</h2>
+        <article>
+          <h3>le bouton dit bonjour</h3>
+          <button type="button" onclick="bonjour()">dite bonjour</button>
+        </article>
+
+        <article>
+          <h3>formulaire de salutation</h3>
+          <form action="javascript:bonjour()">
+            <input type="submit" value="dire bonjours" />
+          </form>
+        </article>
+
+        <article>
+          <h3>dire bonjours via addeventlistener</h3>
+          <input type="button" value="direBonjours" id="direBonjours">
+        </article>
+
+        <article>
+          <h3>reponse du javascript</h3>
+          <p id="reponseBonjour"></p>
+        </article>
+
+        <article>
+          <h3>recuperation et affichage de valeur</h3>
+          <input type="text" id="userFirstName" placeholder="entrer votre nom">
+          <input type="text" id="userName" placeholder="entrer votre prénom">
+          <input type="button" value="evoyer" onclick="exoGuide()">
+          <p id="retExoGuide"></p>
+        </article>
+
+        <article>
+          <h3>concatenation et function prompt()</h3>
+          <input type="button" value="button" onclick="button()">
+
+        </article>
+
+        <article>
+          <h3>majeur ou pas</h3>
+            <input type="text" id="age" placeholder="entrer votre age">
+            <input type="button" value="button" onclick="agex()">
+          <p id="reponse1"></p>
+          
+        </article>
+
+        <article>
+          <h3>le juste prix</h3>
+          <input type="number" id="prix" placeholder="entre votre prix ">
+          <input type="number" id="nombre" placeholder="entre votre nombre">
+          <input type="button" value="button" onclick="resulta()">
+
+          <p id="reponse"></p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h2>Informations</h2>
+      <p>Site web réalisé dans le cadre de la formation</p>
+      <p><strong>Dev FullStack JS</strong></p>
+      <p><strong>Alain FUSTIN</strong> &copy;2022</p>
+    </footer>
+  </body>
+  <script src="/javascript/script.js"></script>
+</html>
